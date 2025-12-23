@@ -1,0 +1,84 @@
+.accordion-header {
+  background: var(--white);
+    color: #333;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: left;
+    outline: none;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.131);
+    font-size: 18px;
+    font-weight: 600;
+    transition: var(--trans);
+  
+    &.active {
+      color: var(--accent2);
+      border: none;
+  
+      .icon-box {
+        border: 2px solid #000000;
+      }
+  
+      .accordion-icon {
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: var(--trans);
+      }
+    }
+  
+    .icon-box {
+      padding: 5px;
+      height: 25px;
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 2px solid #020202a2;
+  
+      .accordion-icon {
+        margin-left: auto;
+        font-size: 12px;
+        color: #020202a2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  
+  .accordion-item {
+    &:last-child {
+      .accordion-header {
+        border-bottom: none;
+      }
+  
+      .accordion-content {
+        border-bottom: none;
+      }
+    }
+  }
+  
+  .accordion-content {
+    display: none;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    padding: 15px 20px;
+    color: #555555;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.131);
+  
+    &.active {
+      border: 2px solid #000000;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    // Add your responsive styles here
+  }
+  

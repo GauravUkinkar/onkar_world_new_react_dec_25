@@ -1,0 +1,196 @@
+.service-parent {
+  background: var(--white);
+
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--unit) * 2);
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--unit) * 7) 0px;
+
+    .service-headding-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .section-title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #262626;
+        font-family: poppins;
+        // display: flex;
+
+        .section-title-span {
+          color: var(--accent2);
+          font-size: 32px;
+          font-weight: 600;
+          font-family: "Playfair Display", serif;
+        }
+      }
+
+      .service-p {
+        max-width: 80ch;
+
+        color: #555555;
+      }
+    }
+
+    .service-card-box {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .service-card {
+        display: flex;
+        width: 380px;
+        flex-direction: column;
+        overflow: hidden;
+        padding: calc(var(--unit)) 0px;
+        transition: var(--trans);
+
+        .card-img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .card-bottom {
+          padding: 10px 10px 30px 10px;
+          display: flex;
+          gap: 20px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          text-align: center;
+          margin: -20px 20px 0px 20px;
+          position: relative;
+
+          .card-overlay {
+            background: var(--accent2);
+            height: 100%;
+            width: 100%;
+            z-index: 3;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: height var(--quick2);
+          }
+
+          .card-icon-box {
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            background: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            transition: var(--trans);
+
+            .card-icon {
+              font-size: calc(var(--unit) * 2.5);
+              // color: #262626;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height:70px;
+              width:70px;
+              background-size:contain !important;
+              background-repeat: no-repeat !important;
+              background-position: center center !important;
+              
+              &.icon1{
+                background:url("../../../public/assets/about/experties/1Raw_material.gif");
+              
+              }
+              &.icon2{
+                background:url("../../../public/assets/about/experties/2Bulk_availability.gif");
+              }
+              &.icon3{
+                background:url("../../../public/assets/about/experties/3unmatch_quality.gif");
+              }
+            }
+          }
+
+           .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+
+            .card-headding {
+              padding-bottom: 10px;
+              font-weight: 600;
+              color: var(--white);
+              text-align: center;
+            }
+
+            .card-p {
+              color: var(--white);
+            }
+          }
+
+          &:hover {
+            box-shadow: 0px 0px 10px #00000036;
+
+            .card-overlay {
+              height: 0px;
+              transition: height var(--quick2);
+            }
+
+            .card-icon-box {
+              background: var(--accent);
+
+              .card-icon {
+                &.icon1{
+                  background:url("../../../../public/assets/Icon/1NewRawMaterial.gif");
+                
+                }
+                &.icon2{
+                  background:url("../../../../public/assets/Icon/2NewBulkavailability.gif");
+                }
+                &.icon3{
+                  background:url("../../../../public/assets/Icon/3Newunmatchquality.gif");
+                }
+              }
+            }
+
+            .card-content {
+              .card-headding,
+              .card-p {
+                color: var(--black);
+                transition: all 300ms ease-in-out;
+              }
+            }
+          }
+        }
+
+        .card-img1 {
+          background-image: url("../../../../public/assets/pic4.webp");
+        }
+
+        .card-img2 {
+          background-image: url("../../../../public/assets/pic22.jpg");
+        }
+
+        .card-img3 {
+          background-image: url("../../../../public/assets/spicesservice.webp");
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .service-parent .service-container .service-card-box .service-card {
+    width: 330px;
+  }
+}

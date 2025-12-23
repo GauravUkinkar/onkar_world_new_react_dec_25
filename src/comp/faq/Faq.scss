@@ -1,0 +1,136 @@
+.faq-parent {
+  .faq-container {
+    padding: calc(var(--unit) * 7) 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    gap: 10px;
+    background: var(--white);
+    .faq-left {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      .faq-heading-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        p  
+        {
+          width: 100%;
+        }
+      }
+      .acc-container {
+        background: #f6f6f6;
+        padding: 20px;
+      }
+    }
+
+    //  {/* ------ form  container-----------*/}
+    .faq-right {
+      width: 40%;
+      padding: 0px 30px;
+
+      .faq-right-container {
+        height: 100%;
+        background: var(--accent);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(var(--unit));
+
+        .form-content {
+          color: var(--white);
+          position: relative;
+          width: fit-content;
+        }
+
+        .form-heading {
+          width: fit-content !important;
+        }
+        .faq-form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+          align-items: start;
+          input {
+            width: 100%;
+            padding: 10px;
+          }
+
+          textarea {
+            width: 100%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .faq-parent {
+    .faq-container {
+      flex-direction: column;
+      gap: 50px;
+
+      .faq-left {
+        width: 80%;
+        margin: auto;
+        .faq-heading-section{
+          text-align: center;
+          .title2{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+          }
+        }
+      }
+
+      .faq-right {
+        width: 80%;
+        padding: 0px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .faq-parent {
+    .faq-container {
+      padding: 50px 10px;
+      gap: 50px;
+      .faq-left {
+        width: 90%;
+      }
+
+      .faq-right {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .faq-parent {
+    .faq-container {
+      gap: 50px;
+      .faq-left {
+        width: 100%;
+      }
+
+      .faq-right {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.get-in-touch-section-parent {
+  background: var(--accent);
+  padding: calc(var(--unit) * 1.6) 10px;
+  border-bottom: 4px solid var(--accent2);
+  margin-bottom: 450px;
+
+  .get-in-touch-section-cont {
+    display: flex;
+    gap: calc(var(--unit) * 4);
+    // padding: 30px 10px;
+
+    .left {
+      width: 50%;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+
+      h3 {
+        width: fit-content;
+      }
+    }
+
+    .right {
+      width: 50%;
+      padding: 20px 0px;
+      display: flex;
+
+      .contact-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: calc(var(--unit) / 2);
+
+
+        .contact {
+          width: 40%;
+          padding: 8px 0px;
+          display: flex;
+          gap: var(--unit);
+          align-items: center;
+          justify-content: center;
+
+
+          .icon-box {
+            font-size: 33px;
+            color: var(--white);
+
+          }
+
+          .text-box {
+
+
+            h3 {
+              font-size: 28px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .email {
+          width: 60%;
+          padding: 8px 0px;
+          display: flex;
+          gap: var(--unit);
+          align-items: center;
+          justify-content: center;
+
+
+          .icon-box {
+            font-size: 33px;
+            color: var(--white);
+          }
+
+          .text-box {
+
+
+            h3 {
+              font-size: 28px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .get-in-touch-section-cont {
+    flex-direction: column !important;
+    gap: var(--unit) !important;
+
+    .left {
+      width: 100% !important;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+    }
+
+    .right {
+      width: 100% !important;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .get-in-touch-section-parent {
+    padding: 10px 10px !important;
+    .left {
+      gap: calc(var(--unit) / 2) !important;
+    }
+
+    .right {
+      padding: 0px !important;
+
+      .contact-info {
+        flex-direction: column !important;
+
+        .contact {
+          width: 100% !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+
+          .text-box {
+
+            h3 {
+              font-size: 22px !important;
+            }
+          }
+        }
+
+        .email {
+          width: 100% !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+
+          .text-box {
+
+            h3 {
+              font-size: 22px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width : 1100px) {
+  .get-in-touch-section-parent {
+    margin-bottom: 0px !important;
+  }
+}

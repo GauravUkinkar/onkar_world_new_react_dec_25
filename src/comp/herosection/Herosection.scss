@@ -1,0 +1,203 @@
+.homeslider-parent {
+  width: 100%;
+  height: calc(100dvh - calc(var(--unit) * 3.5));
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .carousel-overlay {
+      background: rgba(0, 0, 0, 0.712);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .slide-content-box {
+      width: 100%;
+      height: auto;
+      color: var(--white);
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: calc(var(--unit));
+      .description {
+        width: 40%;
+        font-size: calc(var(--unit) * 1.2);
+        line-height: 120%;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background: var(--grey);
+    border-radius: 50%;
+    width: calc(var(--unit) * 3) !important;
+    height: calc(var(--unit) * 3) !important;
+    color: white;
+    cursor: pointer;
+    &:after {
+      font-size: 15px;
+      font-weight: 900;
+    }
+    &:hover {
+      background: var(--accent2);
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: gray;
+    opacity: 1 !important;
+    width: 50px;
+    height: 3px;
+    border-radius: 0px !important;
+    &.swiper-pagination-bullet-active {
+      background: var(--accent2) !important;
+    }
+  }
+}
+.mySwiper {
+  position: relative;
+  background: #000;
+  .company-logo-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100px;
+    z-index: 200;
+    background: white;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .logo-img {
+      width: 200px;
+      // height: 80px;
+      padding-left: 10px;
+      scale: 1;
+    }
+    &::before {
+      content: "";
+      width: 80px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -43px;
+      -webkit-transform: skewX(30deg);
+      transform: skewX(30deg);
+      background: rgb(255, 255, 255);
+      z-index: 2;
+    }
+    &::after {
+      content: "";
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -52px;
+      -webkit-transform: skewX(30deg);
+      transform: skewX(30deg);
+      background: #d9d7d6;
+      z-index: 1;
+    }
+  }
+  @media only screen and  (max-width: 1150px) {
+    .company-logo-box {
+      display: none !important;
+
+    }
+  }
+}
+
+// .homeslider-parent .slide-content-box .title,
+// .homeslider-parent .slide-content-box .description,
+// .homeslider-parent .slide-content-box .cta-btn {
+//   opacity: 0;
+//   transform: translateY(20px);
+//   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+// }
+// .homeslider-parent .slide-content-box .title {
+//   transform: translateY(-20px);
+// }
+// .homeslider-parent .slide-content-box.fade-in .title {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+// .homeslider-parent .slide-content-box.fade-in .description {
+//   transition-delay: 0.5s;
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+// .homeslider-parent .slide-content-box.fade-in .cta-btn {
+//   transition-delay: 0.4s;
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+
+
+
+@media (max-width: 1000px) {
+  .slide-content-box {
+    width: 60%;
+
+    .slider-desc {
+      width: 60% !important;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .slide-content-box {
+    .slider-desc {
+      width: 80% !important;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeslider-parent {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: calc(var(--unit) * 2.5) !important;
+      height: calc(var(--unit) * 2.5) !important;
+      &:after {
+        font-size: 13px;
+        font-weight: 900;
+      }
+      &:hover {
+        background: var(--accent2);
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .homeslider-parent {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: calc(var(--unit) * 2) !important;
+      height: calc(var(--unit) * 2) !important;
+      margin-top: 50px;
+      &:after {
+        font-size: 13px;
+        font-weight: 900;
+      }
+      &:hover {
+        background: var(--accent2);
+      }
+    }
+  }
+}
