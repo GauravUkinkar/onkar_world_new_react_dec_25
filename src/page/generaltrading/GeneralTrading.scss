@@ -1,0 +1,48 @@
+
+.trading-parent-page {
+  background-color: var(--white);
+
+  .trading-container {
+    padding: 50px 10px 10px 10px;
+    align-items: center;
+    margin: auto;
+
+    .trading-heading-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .section-title {
+        text-align: center;
+      }
+
+      .trading-p {
+        text-align: center;
+        padding-top: 10px;
+        max-width: 80ch !important;
+      }
+    }
+  }
+}
+
+.trading-products {
+  padding: 50px 10px;
+  background-color: white !important;
+  text-align: center;
+  .coming-soon {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 800;
+    word-spacing: 2px;
+    .span-product {
+      color: var(--accent2);
+      font-weight: 800;
+    }
+  }
+}
+.section-title-prod 
+{
+  // border: 1px solid red;
+  padding-top: 50px;
+}

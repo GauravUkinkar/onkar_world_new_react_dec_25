@@ -19,13 +19,14 @@
   // overflow-x: hidden;
 
 
-  .logo2{
+  .logo2, .logo{
     width: 150px;
     height: 100%;
 
     img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   // transition: 300ms ease;
   // overflow: hidden;
 }
@@ -36,9 +37,6 @@
   display: none;
   color: var(--accent);
 }
-
-
-
 
 
 .header-links {

@@ -24,22 +24,22 @@ const Footer = () => {
             <div className=" f-col f-col2">
               <h3 className="title3">Links</h3>
               <div className="pages-link hand-light">
-                <Link href="/" className="hand-light">
+                <Link to="/" className="hand-light">
                   <p className="hand-light">Home</p>
                 </Link>
-                <Link href="/about" className="hand-light">
+                <Link to="/about" className="hand-light">
                   <p className="hand-light">About</p>
                 </Link>
-                <Link href="/agroproducts" className="hand-light">
+                <Link to="/agroproducts" className="hand-light">
                   <p className="hand-light">Agro Products</p>
                 </Link>
-                <Link href="/generaltrading" className="hand-light">
+                <Link to="/generaltrading" className="hand-light">
                   <p className="hand-light">General Trading</p>
                 </Link>
-                <Link href="/founders" className="hand-light">
+                <Link to="/founders" className="hand-light">
                   <p className="hand-light">Founders</p>
                 </Link>
-                <Link href="/contact" className="hand-light">
+                <Link to="/contact" className="hand-light">
                   <p className="hand-light">Contact</p>
                 </Link>
               </div>
@@ -48,10 +48,10 @@ const Footer = () => {
             <div className=" f-col f-col3">
               <h3 className="title3">Legals</h3>
               <div className="pages-link">
-                <Link href="/privacypolicy" className="hand-light">
+                <Link to="/privacypolicy" className="hand-light">
                   <p className="hand-light">Privacy & Policy</p>
                 </Link>
-                <Link href="/termsconditions" className="hand-light">
+                <Link to="/termsconditions" className="hand-light">
                   <p className="hand-light">Terms & Conditions</p>
                 </Link>
               </div>

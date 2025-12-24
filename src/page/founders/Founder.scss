@@ -1,0 +1,53 @@
+.founders-parent {
+    background: #f5f5f5;
+   padding: calc(var(--unit) * 7) 0px;
+
+    .founders-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+       
+        // padding: calc(var(--unit) * 7) 0px;
+        padding: 50px 10px;
+
+        .founders-heading-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .section-title {
+                text-align: center;
+            }
+
+            .founders-p {
+                padding-top: 10px;
+                max-width: 80ch !important;
+
+            }
+        }
+
+        .founders-card-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:500px){
+
+    .founders-parent {
+    
+    .founders-container {
+    padding:50px 10px ;
+    }
+    }
+}

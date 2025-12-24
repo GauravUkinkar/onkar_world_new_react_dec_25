@@ -1,0 +1,24 @@
+.product-section-parent {
+  // padding: 50px 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  .product-section-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--unit));
+  }
+
+  .product-section-title {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-section-container {
+    width: 100% !important;
+  }
+}

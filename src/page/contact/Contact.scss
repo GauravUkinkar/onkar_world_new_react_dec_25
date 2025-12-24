@@ -1,0 +1,146 @@
+.contact-parent {
+  background: var(--white);
+  .contact-container {
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+
+    .contact-heading-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .contact-p {
+        max-width: 70ch;
+        text-align: center;
+      }
+    }
+
+    .contact-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      min-height: 400px;
+      align-items: stretch;
+
+      .contact-left,
+      .contact-right {
+        flex: 1;
+        min-width: 300px;
+
+        
+      }
+      
+
+      .google-map,
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .contact-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+
+        // .title2{
+        //   text-align: left !important;
+        // }
+
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          align-items: start;
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 15px;
+            background: #f6f6f6;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+      }
+
+      .contact-left {
+        margin: auto;
+        width: 100%;
+        min-height: 400px;
+
+        .google-map,
+        iframe {
+          margin: auto;
+          width: 100%;
+          height: 400px; 
+        }
+      }
+
+      .contact-right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        .contact-form{
+          align-items: center;
+          .contact-btn{
+            // display: flex;
+            // text-align: center;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+   
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    padding: 50px 10px !important; 
+  }
+
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px !important;
+  }
+
+  .contact-left {
+    width: 100%;
+    min-height: 350px;
+
+    .google-map,
+    iframe {
+      width: 100%;
+      height: 350px;
+    }
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+}
+

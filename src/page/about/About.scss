@@ -1,0 +1,224 @@
+.about-parent {
+  background-color: var(--white);
+
+  .about-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--unit) * 7) 0px;
+
+    gap: var(--unit);
+
+    .left {
+      width: 50%;
+      // padding: 70px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .main-box {
+        position: relative;
+        height: 500px;
+        aspect-ratio: 1;
+
+        .textbox {
+          background: var(--accent2);
+          width: 250px;
+          aspect-ratio: 1;
+          display: flex;
+          flex-direction: column;
+          gap: calc(var(--unit));
+          align-items: flex-start;
+          justify-content: center;
+          padding: 20px;
+          z-index: 4;
+          position: absolute;
+          top: 50px;
+          left: 0px;
+        }
+
+        .box1 {
+          background: url("../../../../public/assets/about/pic11.jpg");
+          width: 350px;
+          aspect-ratio: 1;
+          z-index: 3;
+          position: absolute;
+          bottom: 20px;
+          right: 0px;
+        }
+
+        .box2 {
+          background: url("../../../../public/assets/about/pic22.jpg");
+          width: 320px;
+          aspect-ratio: 2/1;
+          z-index: 2;
+          position: absolute;
+          top: 0px;
+          right: 30px;
+        }
+
+        .box3 {
+          background: url("../../../../public/assets/about/pic44.jpg");
+          height: 300px;
+          aspect-ratio: 4/5;
+          z-index: 1;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      // padding: 70px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--unit) * 2);
+      align-items: flex-start;
+
+      .text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+          position: relative;
+          // border: 1px solid red;
+          width: fit-content;
+        }
+
+        .about-p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-parent {
+    padding: 50px 8px !important;
+
+    .about-cont {
+      flex-direction: column !important;
+      padding: 30px 10px !important;
+
+      .left {
+        width: 100% !important;
+        padding: 30px 10px !important;
+      }
+
+      .right {
+        width: 100% !important;
+        padding: 30px 10px !important;
+        align-items: center;
+
+        .title2 {
+          text-align: center !important;
+          width: 100% !important;
+        }
+
+        .about-p {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    padding: 10px !important;
+
+    .main-box {
+      position: relative;
+      height: 90vw !important;
+      aspect-ratio: 1 !important;
+
+      .textbox {
+        width: 40% !important;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 10% !important;
+        left: 0px;
+      }
+
+      .box1 {
+        width: 70% !important;
+        aspect-ratio: 1;
+        z-index: 3;
+        bottom: 4% !important;
+        right: 0px;
+      }
+
+      .box2 {
+        width: 64% !important;
+        aspect-ratio: 2/1;
+        z-index: 2;
+        top: 0px;
+        right: 6% !important;
+      }
+
+      .box3 {
+        height: 60% !important;
+        aspect-ratio: 4/5;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
+  }
+
+  .cta-btn {
+    display: flex !important;
+    align-items: baseline !important;
+  }
+}
+
+.service-about-parent {
+  background-color: var(--white) !important;
+}
+
+.sis-company-parent {
+  padding: 100px 10px;
+  background: url("../../../../public/assets/siscompany.webp");
+  position: relative;
+
+  .sis-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000000c4;
+  }
+
+  .sis-company-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    box-shadow: 0px 0px 10px #cbc0c0d4;
+    padding: 20px 20px 30px 20px;
+
+    .siscompany-heading {
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .siscompany-para {
+      color: white;
+      text-align: center;
+      // max-width: 75ch;
+      padding-top: 10px;
+      // font-weight: 300;
+    }
+    .cta-div {
+      padding-top: 20px;
+    }
+  }
+}
