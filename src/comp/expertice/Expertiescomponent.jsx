@@ -1,4 +1,5 @@
 import React from "react";
+import "./Expertiescomponent.scss"
 
 const Expertiescomponent = (props) => {
   return (

@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© Copyright Onkar 2024. All right reserved.</p>
+            <p>© Copyright {new Date().getFullYear()}. All right reserved.</p>
             <a href="https://diwise.in/">
               Designed by <span className="c-name hand-dark">DIwise</span>
             </a>

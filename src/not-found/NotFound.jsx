@@ -1,5 +1,6 @@
 import React from "react";
 import "./NotFound.scss";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -10,7 +11,7 @@ const NotFound = () => {
             <span className="number">404</span>
             <p className="text">Page not found!</p>
           </div>
-          <Link href="/" className="button cta-btn">
+          <Link to="/" className="button cta-btn">
             <p>Back To Home</p>
           </Link>
         </div>

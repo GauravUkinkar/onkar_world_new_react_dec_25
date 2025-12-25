@@ -3,8 +3,8 @@ import "./About.scss";
 import gsap from "gsap";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import Expertiescomponent from "../../comp/expertice/Expertiescomponent";
 import ServiceAbout from "../servicesabout/ServiceAbout";
+import Experties from "../../comp/experticeData/Experties";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -131,7 +131,7 @@ const About = () => {
       </div>
 
       {/* expertice  */}
-      <Expertiescomponent />
+      <Experties />
       <div className="service-about-parent">
         <ServiceAbout />
       </div>

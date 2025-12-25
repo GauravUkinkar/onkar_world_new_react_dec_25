@@ -55,7 +55,7 @@ const TwoCol = ({title, content, background,type, direction}) => {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="service-parent1 parent" ref={sectionRef}>
         <div
           className="container service-container"
@@ -82,7 +82,7 @@ const TwoCol = ({title, content, background,type, direction}) => {
         </div>
         <ProductCardSection type={type} title={title} />
       </div>
-    </div>
+    </>
   );
 };
 

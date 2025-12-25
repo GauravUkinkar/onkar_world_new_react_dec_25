@@ -11,6 +11,9 @@ import AgroProducts from "./page/agroproducts/AgroProducts";
 import GeneralTrading from "./page/generaltrading/GeneralTrading";
 import Founder from "./page/founders/Founder";
 import Contact from "./page/contact/Contact";
+import NotFound from "./not-found/NotFound";
+import PrivacyPolicy from "./page/privacypolicy/PrivacyPolicy";
+import TermsConditions from "./page/termsconditions/TermsConditions";
 
 function App() {
   const cursorRef = useRef(null);
@@ -83,6 +86,9 @@ function App() {
           <Route path="/generaltrading" element={<GeneralTrading />} />
           <Route path="/founders" element={<Founder />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/termsconditions" element={<TermsConditions />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <GetInTouch />

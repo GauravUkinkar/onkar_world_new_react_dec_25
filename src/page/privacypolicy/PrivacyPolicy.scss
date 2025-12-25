@@ -1,0 +1,34 @@
+.privacy-parent {
+    background-color: var(--white);
+    padding: 50px 0px;
+
+    .privacy>* {
+        padding: 10px 0px;
+
+        h4 {
+            font-weight: bold;
+        }
+    }
+
+    .privacy {
+        h1 {
+            text-align: center;
+        }
+
+        .suggest-text {
+            font-weight: bold !important;
+            color: var(--accent) !important;
+            font-size: 20px;
+        }
+    }
+}
+
+h3 {
+    font-size: 18px;
+    // color: var(--accent);
+    font-weight: 600;
+}
+
+p {
+    text-align: justify;
+}

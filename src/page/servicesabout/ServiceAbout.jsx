@@ -1,6 +1,6 @@
 import React from "react";
 import "./ServiceAbout.scss";
-import img1 from "../../../public/assets/about/rawmaterial.webp";
+import img1 from "../../../public/assets/about/rawmaterial1.webp";
 import img22 from "../../../public/assets/services/img22.jpg";
 import img3 from "../../../public/assets/services/niche.webp";
 import TwoCol from "../../comp/twocol/TwoCol";
@@ -28,8 +28,7 @@ const ServiceAbout = () => {
   ];
   return (
     <>
-      <div className="service-parent-main">
-        <div className="service-container-main">
+    
           {data.map((item, index) => {
             return (
               <TwoCol
@@ -40,8 +39,7 @@ const ServiceAbout = () => {
               />
             );
           })}
-        </div>
-      </div>
+      
     </>
   );
 };

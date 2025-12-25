@@ -89,7 +89,7 @@ p {
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -282,5 +282,29 @@ a{
 @media (max-width: 700px) {
   .custom-cursor {
     display: none !important;
+  }
+}
+
+.swiper-button-next {
+  border-radius: 50%;
+  svg {
+    width: 35% !important;
+    height: 35% !important;
+    object-fit: contain;
+    transform-origin: center;
+    fill: currentColor;
+    pointer-events: none;
+  }
+}
+
+.swiper-button-prev {
+  border-radius: 50%;
+  svg {
+    width: 35% !important;
+    height: 35% !important;
+    object-fit: contain;
+    transform-origin: center;
+    fill: currentColor;
+    pointer-events: none;
   }
 }

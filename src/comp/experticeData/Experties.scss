@@ -1,0 +1,27 @@
+.experties-parent {
+  padding: 100px 10px;
+  background-color: var(--light-grey);
+
+  .experties-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    .experties-box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      transition: var(--trans1);
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .experties-parent {
+    padding: 50px 10px;
+  }
+}
