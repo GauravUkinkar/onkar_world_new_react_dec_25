@@ -64,7 +64,6 @@ function App() {
     document.addEventListener("mouseout", handleMouseLeave);
 
     return () => {
-      
       document.removeEventListener("mouseover", handleMouseEnter);
       document.removeEventListener("mouseout", handleMouseLeave);
     };
